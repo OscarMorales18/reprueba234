@@ -1,4 +1,4 @@
-//Aqui se encuentra el archivos de implentación de la clase CARRERA que contiene todo el codigo fuente
+//Aqui se encuentra el archivos de implentaciÃ³n de la clase CARRERA que contiene todo el codigo fuente
 //del funcionamiento del la clase
 #include "Carrera.h"
 #include "usuarios.h"
@@ -11,8 +11,8 @@
 #include<conio.h>
 #include<iomanip>
 using namespace std;
-//Carlos David calderón Ramírez      9959-23-848
-//Comentado revisado y depurado por:  Evelyn Sofía Andrade Luna   9959-23-1224
+//Carlos David calderÃ³n RamÃ­rez      9959-23-848
+//Comentado revisado y depurado por:  Evelyn SofÃ­a Andrade Luna   9959-23-1224
 // menu CRUD de carreras
 
 
@@ -134,7 +134,7 @@ void CarrerasCRUD::ModificarCa() {
     Auditoria.ingresoBitacora(user,codigoPrograma,"UCA");//UCA = Update Carrera
 
     if (!encontrada) {
-        cout << "No se encontró la carrera con el codigo ingresado." << endl;
+        cout << "No se encontrÃ³ la carrera con el codigo ingresado." << endl;
     }
     else {
         cout << "Carrera modificada exitosamente!" << endl;
@@ -183,7 +183,7 @@ void CarrerasCRUD::BorrarCa() {
         cout << "Carrera eliminada exitosamente!" << endl;
 
     } else {
-        cout << "No se encontró la carrera con el codigo ingresado." << endl;
+        cout << "No se encontrÃ³ la carrera con el codigo ingresado." << endl;
     }
 
 }

@@ -8,7 +8,7 @@
 #include<conio.h>
 #include<iomanip>
 
-//ImplementaciÛn de Bit·cora hechar por: Pablo Romeo Palencia Rosales 9959-23-736
+//Implementaci√≥n de Bit√°cora hechar por: Pablo Romeo Palencia Rosales 9959-23-736
 #include "Bitacora.h"
 
 using namespace std;
@@ -152,7 +152,7 @@ void CursosCRUD::ModificarCa() {
     archivo.close();
 
     if (!encontrada) {
-        cout << "No se encontrÛ la Cursos con el codigo ingresado." << endl;
+        cout << "No se encontr√≥ la Cursos con el codigo ingresado." << endl;
     } else {
         cout << "Cursos modificada exitosamente!" << endl;
     }
@@ -196,7 +196,7 @@ void CursosCRUD::BorrarCa() {
         cout << "Cursos eliminada exitosamente!" << endl;
 
     } else {
-        cout << "No se encontrÛ la Cursos con el codigo ingresado." << endl;
+        cout << "No se encontr√≥ la Cursos con el codigo ingresado." << endl;
     }
 
 }

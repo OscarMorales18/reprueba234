@@ -120,7 +120,7 @@ void FacultadCRUD::ModificarFa() {
 //-----------------------------------------------------------------------------------------
     // nos indica si no se encontro la facultad por si no esta registrada
     if (!encontrada) {
-        cout << "No se encontró la facultad con el codigo ingresado." << endl;
+        cout << "No se encontrÃ³ la facultad con el codigo ingresado." << endl;
     } else {
         cout << "Facultad modificada exitosamente!" << endl;
     }
@@ -166,7 +166,7 @@ void FacultadCRUD::BorrarFa() {
     if (eliminada) {
         cout << "Facultad eliminada exitosamente!" << endl;
     } else {
-        cout << "No se encontró la facultad con el codigo ingresado." << endl;
+        cout << "No se encontrÃ³ la facultad con el codigo ingresado." << endl;
     }
 }
 // nos muestra un reporte de las facultades que estan registradas
@@ -199,5 +199,3 @@ void FacultadCRUD::DesplegarFa() {
     cin.ignore();
     cin.get();
 }
-
-

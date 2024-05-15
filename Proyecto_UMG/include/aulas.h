@@ -31,4 +31,3 @@ class AulasCRUD
 };//fin de la clase aula
 
 #endif // AULAS_H
-
