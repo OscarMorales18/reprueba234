@@ -28,7 +28,7 @@ int main()
     // Creamos un bool que verifique y despliegue el metodo VerificarUsuario
     bool UsuarioCorrecto = ingreso.VerificarUsuario();
 
-    // Luego de ingresar con usuario y contrase馻 se nos despliega otro menu
+    // Luego de ingresar con usuario y contrase帽a se nos despliega otro menu
     if (UsuarioCorrecto)
     {
         menuGeneral();
@@ -119,10 +119,10 @@ void catalogos()
         switch (choice)
         {
         case 1:
-            // Implementaci髇 para Alumnos
+            // Implementaci贸n para Alumnos
             break;
         case 2:
-            // Implementaci髇 para Maestros
+            // Implementaci贸n para Maestros
             break;
         case 3:
         {
@@ -131,28 +131,28 @@ void catalogos()
             break;
         }
         case 4:
-            // Implementaci髇 para Carreras
+            // Implementaci贸n para Carreras
             break;
         case 5:
-            // Implementaci髇 para Facultades
+            // Implementaci贸n para Facultades
             break;
         case 6:
-            // Implementaci髇 para Cursos
+            // Implementaci贸n para Cursos
             break;
         case 7:
-            // Implementaci髇 para Jornadas
+            // Implementaci贸n para Jornadas
             break;
         case 8:
-            // Implementaci髇 para Aulas
+            // Implementaci贸n para Aulas
             break;
         case 9:
-            // Implementaci髇 para Secciones
+            // Implementaci贸n para Secciones
             break;
         case 10:
-            // Implementaci髇 para Sedes
+            // Implementaci贸n para Sedes
             break;
         case 11:
-            // Implementaci髇 para Horarios
+            // Implementaci贸n para Horarios
             break;
         case 12:
             menuGeneral();
@@ -167,22 +167,22 @@ void catalogos()
 
 void procesos()
 {
-    // Implementaci髇 de procesos
+    // Implementaci贸n de procesos
 }
 
 void reportes()
 {
-    // Implementaci髇 de reportes
+    // Implementaci贸n de reportes
 }
 
 void ayuda()
 {
-    // Implementaci髇 de ayuda
+    // Implementaci贸n de ayuda
 }
 
 void seguridad()
 {
-    // Implementaci髇 de seguridad
+    // Implementaci贸n de seguridad
     Bitacora Auditoria;
     Auditoria.visualizarBitacora();
 }

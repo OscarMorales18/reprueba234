@@ -8,7 +8,7 @@
 #include<iomanip>
 
 using namespace std;
-//Elaborado por : Daniel Antonio Chacón Morataya  9959-22-1827
+//Elaborado por : Daniel Antonio ChacÃ³n Morataya  9959-22-1827
 struct Carrera {
     int codigo;
     char nombre[50];
@@ -27,4 +27,3 @@ public:
 #endif // CARRERA_H
 
 // Usamos archivos de encabezado para tener un orden y mas limpio nuestro codigo y facil de encontrar errores
-

@@ -1,4 +1,3 @@
-
 //Creado por Andre de Jesus 9959-23-3117
 
 #include "usuarios.h"
@@ -206,7 +205,7 @@ void usuarios::modificar()
     archivo.close();
 
     if (!encontrado) {
-        cout << "No se encontró un usuario con el nombre proporcionado." << endl;
+        cout << "No se encontrÃ³ un usuario con el nombre proporcionado." << endl;
     }
     cout << "Presione Enter Para Continuar";
     cin.ignore();

@@ -1,6 +1,6 @@
 //Creado por Rocio Guisell Lopez espinoza 9959-23-740
 
-//Incluir la biblioteca para manipulación de archivo
+//Incluir la biblioteca para manipulaciÃ³n de archivo
 #include "aulas.h"
 
 //Bibliotecas necesarias para que el codigo funcione
@@ -18,7 +18,7 @@
 
 using namespace std;
 
-//Definir la función principal del CRUD
+//Definir la funciÃ³n principal del CRUD
 void AulasCRUD::CrudAula()
 {
  //implementacion de variables para bitacora
@@ -85,7 +85,7 @@ void AulasCRUD::CrudAula()
 
 }
 
-// Función para agregar un aula
+// FunciÃ³n para agregar un aula
 void AulasCRUD::IngresarAula() {
     // Limpiar la pantalla
     system("cls");
@@ -111,19 +111,19 @@ void AulasCRUD::IngresarAula() {
     archivo.write(reinterpret_cast<const char*>(&aula), sizeof(aulas));
     archivo.close(); // Cerrar el archivo
 
-    cout << "aula agregada exitosamente!" << endl; // Mostrar mensaje de éxito
+    cout << "aula agregada exitosamente!" << endl; // Mostrar mensaje de Ã©xito
 }
 
-// Función para modificar un aula
+// FunciÃ³n para modificar un aula
 void AulasCRUD::ModificarAula() {
     int codigo;
-    // Solicitar al usuario ingresar el código del aula a modificar
+    // Solicitar al usuario ingresar el cÃ³digo del aula a modificar
     cout << "Ingrese el codigo de la aula a modificar: ";
     cin >> codigo;
 
     // Abrir el archivo de aulas en modo lectura y escritura binaria
     fstream archivo("aulas.dat", ios::binary | ios::in | ios::out);
-    // Verificar si el archivo se abrió correctamente
+    // Verificar si el archivo se abriÃ³ correctamente
     if (!archivo) {
         cout << "No hay aulas registradas." << endl;
         return;
@@ -132,7 +132,7 @@ void AulasCRUD::ModificarAula() {
     // Declarar una variable para el aula
     aulas aula;
     bool encontrada = false;
-    // Recorrer el archivo para encontrar el aula con el código ingresado
+    // Recorrer el archivo para encontrar el aula con el cÃ³digo ingresado
     while (archivo.read(reinterpret_cast<char*>(&aula), sizeof(aulas))) {
         if (aula.codigo == codigo) {
             // Solicitar al usuario ingresar los nuevos datos del aula
@@ -143,7 +143,7 @@ void AulasCRUD::ModificarAula() {
             cout << "Ingrese el nuevo estatus de la aula: ";
             cin.getline(aula.estatus, 50);
 
-            // Mover el puntero de escritura hacia atrás para sobreescribir el aula
+            // Mover el puntero de escritura hacia atrÃ¡s para sobreescribir el aula
             archivo.seekp(-static_cast<int>(sizeof(aulas)), ios::cur);
             // Escribir el aula modificada en el archivo
             archivo.write(reinterpret_cast<const char*>(&aula), sizeof(aulas));
@@ -156,23 +156,23 @@ void AulasCRUD::ModificarAula() {
     archivo.close(); // Cerrar el archivo
 
     if (!encontrada) {
-        cout << "No se encontró la aula con el codigo ingresado." << endl;
+        cout << "No se encontrÃ³ la aula con el codigo ingresado." << endl;
     } else {
         cout << "aula modificada exitosamente!" << endl;
     }
 
 }
 
-// Función para eliminar un aula
+// FunciÃ³n para eliminar un aula
 void AulasCRUD::BorrarAula() {
     int codigo;
-    // Solicitar al usuario ingresar el código del aula a eliminar
+    // Solicitar al usuario ingresar el cÃ³digo del aula a eliminar
     cout << "Ingrese el codigo de la aula a eliminar: ";
     cin >> codigo;
 
     // Abrir el archivo de aulas en modo lectura binaria
     ifstream archivo("aulas.dat", ios::binary);
-    // Verificar si el archivo se abrió correctamente
+    // Verificar si el archivo se abriÃ³ correctamente
     if (!archivo) {
         cout << "No hay aulas registradas." << endl;
         return;
@@ -202,12 +202,12 @@ void AulasCRUD::BorrarAula() {
     if (eliminada) {
         cout << "aula eliminada exitosamente!" << endl;
     } else {
-        cout << "No se encontró la aula con el codigo ingresado." << endl;
+        cout << "No se encontrÃ³ la aula con el codigo ingresado." << endl;
     }
 
 }
 
-// Función para desplegar todas las aulas registradas
+// FunciÃ³n para desplegar todas las aulas registradas
 void AulasCRUD::DesplegarAula() {
     // Limpiar la pantalla
     system("cls");
@@ -215,7 +215,7 @@ void AulasCRUD::DesplegarAula() {
     cout<<"-----------------Despliegue de aulas registradas---------------------"<<endl;
     // Abrir el archivo de aulas en modo lectura binaria
     ifstream archivo("aulas.dat", ios::binary);
-    // Verificar si el archivo se abrió correctamente
+    // Verificar si el archivo se abriÃ³ correctamente
     if (!archivo) {
         cout << "No hay aulas registradas." << endl;
         return;

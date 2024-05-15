@@ -8,7 +8,7 @@
 #include<conio.h>
 #include<iomanip>
 
-//ImplementaciÛn de Bit·cora hechar por: Pablo Romeo Palencia Rosales 9959-23-736
+//Implementaci√≥n de Bit√°cora hechar por: Pablo Romeo Palencia Rosales 9959-23-736
 #include "Bitacora.h"
 
 using namespace std;
@@ -136,7 +136,7 @@ void JornadaCRUD::Modificar() {
 //se cierra el archivo
     archivo.close();
     if (!encontrada) {
-        cout << "No se encontrÛ la Jornada con el codigo ingresado." << endl;
+        cout << "No se encontr√≥ la Jornada con el codigo ingresado." << endl;
     } else {
         cout << "Jornada modificada exitosamente!" << endl;
     }
@@ -180,7 +180,7 @@ void JornadaCRUD::Borrar() {
         cout << "Jornada eliminada exitosamente!" << endl;
 
     } else {
-        cout << "No se encontrÛ la Jornada con el codigo ingresado." << endl;
+        cout << "No se encontr√≥ la Jornada con el codigo ingresado." << endl;
     }
 
 }
@@ -213,4 +213,3 @@ void JornadaCRUD::Desplegar() {
     cin.ignore();
     cin.get();
 }
-
